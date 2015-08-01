@@ -1,6 +1,47 @@
-<% if user_signed_in? %>
-    <h1>Hello <%= current_user.first_name %></h1>
-    <%= image_tag current_user.avatar.url(:medium) %>
-<% else %>
-    <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
-<% end %>
+<!-- Top content -->
+<div class="top-content">
+  <div class="inner-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 phone wow fadeInLeft">
+          <%= image_tag('iphone-1.png') %>
+        </div>
+        <div class="col-sm-7 text wow fadeInUp">
+          <div class="logo">
+            <a href="">Acquintly</a>
+          </div>
+          <h1>Your online business card.</h1>
+          <div class="description">
+            Acquintly lets you share your contacts easily and safely through the use of QR Code.
+          </div>
+          <div class="top-download">
+            <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "btn big-link-1"  %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 footer-copyright">
+        &copy; Acquintly by <a href="http://victorareba.com">theareba</a>.
+      </div>
+      <div class="col-sm-5 footer-social">
+        <a class="ultm ultm-facebook ultm-32 ultm-square ultm-color-to-gray" href=""></a>
+        <a class="ultm ultm-dribbble ultm-32 ultm-square ultm-color-to-gray" href=""></a>
+        <a class="ultm ultm-twitter ultm-32 ultm-square ultm-color-to-gray" href=""></a>
+        <a class="ultm ultm-google-plus-1 ultm-32 ultm-square ultm-color-to-gray" href=""></a>
+        <a class="ultm ultm-pinterest ultm-32 ultm-square ultm-color-to-gray" href=""></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $('.top-content').backstretch("/1.jpg");
+</script>
+
