@@ -45,11 +45,11 @@
 
 <div class="container">
 
-  <%= if flash[:notice] %>
+  <% if notice %>
       <div class="alert alert-success" role="alert"><%= notice %></div>
   <% end %>
 
-  <%= if flash[:alert] %>
+  <% if alert %>
       <div class="alert alert-danger" role="alert"><%= alert %></div>
   <% end %>
 
