@@ -14,6 +14,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-public/*.png
+public/1.png
 public/system/
 .idea/
